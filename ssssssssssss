@@ -1,10 +1,6 @@
 local keys = {   
 	"FF9ABE5DA2592EFC8162A9744F5B1",   
 }
-local account = {   
-	3136731685,
-    1408946086
-}
 
 --𝐻𝒶𝓂𝓅𝑒#0706 AND 𝓈𝓀𝓊𝓁𝓁𝓎#2888-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -220,7 +216,7 @@ loadbutton.MouseButton1Click:Connect(function()
 	local i = 1
 	local j = 5
 	while ( i < j ) do
-		if ( key.Text == keys[i] and ( account[i] == 0 or account[i] == game.Players.LocalPlayer.UserId )) then 
+		if ( key.Text == keys[i] and ( keys[i] == 0 or keys[i] == key.Text )) then 
 			i = 999999
 			user = true
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/Hampe073/ezezezez/main/ss', true))()
